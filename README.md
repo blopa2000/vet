@@ -1,12 +1,57 @@
-# React + Vite
+## 🐾 PetSalud - Panel de Administración
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+📌 Descripción
 
-Currently, two official plugins are available:
+Este proyecto es una aplicación web creada con Vite, React, React Router DOM y Tailwind CSS. Su propósito es administrar información relacionada con una veterinaria, permitiendo gestionar especialistas y servicios.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Nota: No se utiliza una base de datos; en su lugar, la información se gestiona mediante Local Storage.
 
-## Expanding the ESLint configuration
+🚀 Tecnologías Utilizadas
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Vite (para una configuración rápida y eficiente)
+
+React (librería para la interfaz de usuario)
+
+React Router DOM (gestión de rutas)
+
+Tailwind CSS (estilización rápida y moderna)
+
+📦 Instalación y Configuración
+
+Sigue estos pasos para instalar y ejecutar el proyecto en tu entorno local:
+
+1️⃣ Clonar el repositorio
+
+  ``git clone https://github.com/blopa2000/vet.git``
+
+2️⃣ Navegar al directorio del proyecto
+
+  ``cd vet``
+
+3️⃣ Instalar dependencias
+
+  ``npm install``
+
+4️⃣ Ejecutar el servidor de desarrollo
+
+  ``npm run dev``
+
+El proyecto se ejecutará en http://localhost:5173 por defecto.
+
+🔑 Autenticación y Gestión de Usuarios
+
+El sistema de autenticación está basado en Local Storage. Se simulan tres tipos de usuarios:
+
+Administrador: Puede agregar, editar y eliminar datos.
+
+Visualizador: Solo puede ver los datos sin modificarlos.
+
+Cliente: Tiene acceso a información específica.
+
+🛠️ Funcionalidades Clave
+
+✅ Gestión de especialistas y servicios.✅ Rutas protegidas según el tipo de usuario.✅ Simulación de base de datos con Local Storage.✅ Diseño responsivo con Tailwind CSS.
+
+📜 Licencia
+
+Este proyecto es de código abierto y se encuentra bajo la licencia MIT.
