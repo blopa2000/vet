@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Consulta General",
+    "description": "Evaluación completa de la salud del animal, identificación de posibles enfermedades y orientación sobre cuidados generales."
+  },
+  {
+    "id": 2,
+    "name": "Vacunación",
+    "description": "Aplicación de vacunas esenciales para prevenir enfermedades en mascotas, siguiendo el esquema de vacunación recomendado."
+  },
+  {
+    "id": 3,
+    "name": "Desparasitación",
+    "description": "Tratamiento para eliminar parásitos internos y externos que pueden afectar la salud de la mascota."
+  },
+  {
+    "id": 4,
+    "name": "Esterilización y Castración",
+    "description": "Procedimiento quirúrgico seguro para evitar la reproducción no deseada y mejorar la salud general de la mascota."
+  },
+  {
+    "id": 5,
+    "name": "Cirugías Generales",
+    "description": "Procedimientos quirúrgicos diversos realizados por especialistas, garantizando la seguridad y bienestar del animal."
+  },
+  {
+    "id": 6,
+    "name": "Atención de Emergencias",
+    "description": "Servicio inmediato para tratar accidentes, enfermedades repentinas o cualquier situación crítica que ponga en riesgo la vida de la mascota."
+  },
+  {
+    "id": 7,
+    "name": "Diagnóstico por Imágenes",
+    "description": "Uso de radiografías, ecografías y otros métodos avanzados para evaluar la condición interna del animal y detectar posibles enfermedades."
+  }
+]

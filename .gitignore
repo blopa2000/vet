@@ -1,0 +1,28 @@
+# Node.js dependencies
+node_modules/
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# Directorio de construcción
+dist/
+
+# Archivos de configuración del entorno
+.env
+.env.local
+.env.*.local
+
+# Archivos de editor/IDE
+.vscode/
+.idea/
+*.iml
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Caché y logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vite/
