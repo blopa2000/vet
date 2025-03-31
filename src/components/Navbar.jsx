@@ -11,18 +11,16 @@ function Navbar() {
           <span className="text-xl font-semibold">PetSalud</span>
         </div>
 
-        <div className="flex gap-6 items-center">
+        <div className="flex font-semibold gap-6 items-center">
           {/* Links */}
           <div className="flex gap-6 text-sm">
             <Link to="/" className="hover:underline">
               Inicio
             </Link>
-            <Link to="/services" className="hover:underline">
-              Servicios
-            </Link>
-            <Link to="specialists" className="hover:underline">
-              Especialistas
-            </Link>
+            <Link 
+            to="#" onClick={(e) => {e.preventDefault(); document.getElementById("services")?.scrollIntoView({ behavior: "smooth" }); }} className="hover:underline">Servicios</Link>
+            <Link 
+            to="#" onClick={(e) => {e.preventDefault(); document.getElementById("sede")?.scrollIntoView({ behavior: "smooth" }); }} className="hover:underline">Sede</Link>
             <Link to="/contact" className="hover:underline">
               Contáctanos
             </Link>
@@ -30,7 +28,7 @@ function Navbar() {
 
           {/* Botón Iniciar Sesión */}
           <Link to="/login">
-            <button className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-medium hover:bg-yellow-500">
+            <button className="bg-yellow-400 font-semibold text-white px-4 py-2 rounded-lg font-medium hover:bg-yellow-500">
               Iniciar sesión
             </button>
           </Link>

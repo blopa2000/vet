@@ -37,5 +37,5 @@ function Specialists() {
     </div>
   );
 }
-console.log(localStorage.getItem("specialists"));
+
 export default Specialists;
