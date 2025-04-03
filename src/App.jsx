@@ -10,7 +10,6 @@ import ServiceForm from "./components/admin/ServiceForm";
 
 import Home from "./pages/Home";
 import Specialists from "./pages/Specialists";
-import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Register from "./pages/Register";
 import Client from "./pages/Client";
@@ -44,7 +43,6 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/specialists" element={<Specialists />} />
-          <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Register />} />
         </Route>

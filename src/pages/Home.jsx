@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import imagen from "../utils/images/especialistas 1.png"
 import imagenSede from "../utils/images/Pet salud 1.png"
 import Testimonials from "../components/Testimonials";
-import servicesData from "../data/services.json";
+import Services from "../components/Services";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
-  const [services] = useState(servicesData);
   const navigate = useNavigate();
 
   return (
@@ -48,17 +47,7 @@ function Home() {
       </section>
 
       {/* Sesión de nuestros servicios */}
-      <section id="services" className="p-10 text-[#4B4B4B] justify-center">
-        <h2 className="text-3xl text-center font-bold">Nuestros servicios</h2>
-        <div className="mt-6 grid grid-cols-3 gap-6">
-          {services.map((service, index) => (
-          <div key={index} className="p-5 border border-[#EBEBEB] rounded-lg shadow-lg">
-            <h3 className="text-xl text-center text-[#DF485D] font-bold ">{service.name}</h3>
-            <p className="mt-2 font-semibold">{service.description}</p>
-          </div>
-        ))}
-      </div>
-      </section>
+      <Services/>
 
       {/* Sesión de nuestra sede */}
       <section id="sede" className="bg-[#DF485D] text-white p-10 flex flex-col justify-center md:flex-row items-center gap-6 rounded-lg" >
