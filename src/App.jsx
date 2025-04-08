@@ -7,6 +7,7 @@ import SpecialistDetail from "./components/admin/SpecialistDetail";
 import SpecialistForm from "./components/admin/SpecialistForm";
 import ServicesDetail from "./components/admin/ServiceDetail";
 import ServiceForm from "./components/admin/ServiceForm";
+import ListQuotes from "./components/client/AppointmentsTable";
 
 import Home from "./pages/Home";
 import Specialists from "./pages/Specialists";
@@ -69,15 +70,13 @@ function App() {
           </Route>
         </Route>
 
-        <Route
-          path="/client"
-          element={
-            <ProtectedRoute allowedRoles={["client"]}>
-              <Client />
-            </ProtectedRoute>
-          }
-        />
-      </Routes>
+        <Route element={<ProtectedRoute allowedRoles={["client"]} />}>
+          <Route path="/client" element={<Client />}>
+            <Route path="" element={<ListQuotes />} />
+          </Route>
+        </Route>
+          
+            </Routes>
     </>
   );
 }
